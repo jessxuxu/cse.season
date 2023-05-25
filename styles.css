@@ -1,0 +1,45 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    }
+
+    .autumn {
+    background-color: #efe0b9;
+    color: #643b0f;
+    }
+
+    .summer {
+    background-color: #fbffdc;
+    color: #98eecc;
+    }
+
+    .winter {
+    background-color: #526d82;
+    color: #dde6ed;
+    }
+
+    .spring {
+    background-color: #fdf7c3;
+    color: #b2a4ff;
+    .list-container:after {
+        filter: hue-rotate(0deg);
+        
+        position: fixed;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(https://i.imgur.com/QqP0mWL.png),
+        url(https://i.imgur.com/Io1Lzgf.png),
+        url(https://i.imgur.com/Ulp6xjS.png);
+        animation: SAKURA 10s linear infinite;
+        z-index: -5;
+        }
+        @keyframes SAKURA {
+        0% { background-position: 0 0, 0 0, 0 0; }
+        100% { background-position: 500px 1000px, 400px 400px, 300px 300px; }
+        }
+    }
